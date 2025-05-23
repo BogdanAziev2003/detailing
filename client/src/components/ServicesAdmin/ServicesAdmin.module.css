@@ -1,0 +1,168 @@
+.section {
+  background-color: #000;
+  padding: 40px 20px;
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #ffcc00;
+  border-radius: 16px;
+  margin-top: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ffcc00;
+}
+
+.form {
+  background-color: #111;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.formRow {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.formGroup {
+  flex: 1;
+  margin-bottom: 15px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: #222;
+  border: 1px solid #333;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #ffcc00;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.imageUpload {
+  margin-top: 10px;
+}
+
+.uploadLabel {
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  padding: 20px;
+  border: 2px dashed #444;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.uploadLabel:hover {
+  border-color: #ffcc00;
+}
+
+.uploadText {
+  color: #aaa;
+  font-size: 16px;
+}
+
+.fileInput {
+  display: none;
+}
+
+.imagePreviewContainer {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.imagePreview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.removeImageButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 0, 0, 0.7);
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.submitButton {
+  flex: 1;
+  padding: 15px;
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #ffd633;
+}
+
+.resetButton {
+  flex: 1;
+  padding: 15px;
+  background-color: transparent;
+  color: #ffcc00;
+  border: 1px solid #ffcc00;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.resetButton:hover {
+  background-color: rgba(255, 204, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .formRow {
+    flex-direction: column;
+    gap: 0;
+  }
+}
